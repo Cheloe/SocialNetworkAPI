@@ -2,11 +2,11 @@
   "name": "Social_Network_API",
   "version": "1.0.0",
   "description": "NoSql back-end for Social Network",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index",
+    "start": "node server",
+    "dev": "nodemon server",
     "seed": "node utils/seed"
   },
   "dependencies": {
