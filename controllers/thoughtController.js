@@ -10,6 +10,15 @@ module.exports = {
             res.status(500).json(err);
         }
     },
+    
+    async createThought(req, res) {
+        try {
+            const thought = await Thought.create();
+            res.json(thought);
+        } catch (err) {
+            res.status(500).json(err);
+        }
+    },
 
     // get a single thought
     async getSingleThought(req,res) {

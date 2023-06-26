@@ -11,6 +11,16 @@ module.exports = {
         }
     },
 
+    // create new user
+    async createUser(req, res) {
+        try {
+            const user = User.create();
+            res.json(user);
+        } catch (err) {
+            res.status(500).json(err);
+        }
+    },
+
     // get a single user
     async getSingleUser(req,res) {
         try {
